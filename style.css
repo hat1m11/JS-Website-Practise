@@ -1,0 +1,297 @@
+/* Desktop (Default) */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.content-wrapper {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Navbar Logo */
+.button-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* Navbar Buttons */
+section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #574f4f;
+    margin: 0;
+    text-align: center;
+}
+
+h1:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+h2  {
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #574f4f;
+    margin: 0 0 20px 0;
+    margin-left: 200px;
+}
+
+h2:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.history {
+    margin-bottom: 40px;
+}
+
+.history {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #574f4f;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dishes-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.paella, .fideua, .tortilla {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.paella h2, .fideua h2, .tortilla h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.paella p, .fideua p, .tortilla p {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #574f4f;
+    line-height: 1.6;
+}
+
+.homeButton, .recipeButton, .contactButton {
+    background-color: #fff;
+    color: #574f4f;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 15px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    outline: none;
+    gap: 70px;
+}
+
+.homeButton:hover, .recipeButton:hover, .contactButton:hover {
+    background-color: transparent;
+    color: #574f4f;
+    transform: scale(1.1);
+}
+
+
+
+.homeButton img {
+    width: 20px; 
+    height: 20px;
+}
+
+.recipeButton img {
+    width: 20px; 
+    height: 20px;
+}
+
+.contactButton img {
+    width: 20px; 
+    height: 20px;
+}
+
+hr.separation-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    width: 100%;
+}
+
+.main-class {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.image-row {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left-image, .left-image1, .right-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.left-image:hover, .left-image1:hover, .right-image:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.1);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #574f4f;
+    color: white;
+    border-top: 3px solid #948a8a;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Desktops */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        padding: 15px;
+    }
+
+    .dishes-info {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .paella, .fideua, .tortilla {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .image-row {
+        gap: 30px;
+    }
+
+    .left-image, .left-image1, .right-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .button-wrapper {
+        gap: 15px;
+    }
+
+    .homeButton, .recipeButton, .contactButton {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .history p {
+        font-size: 16px;
+    }
+
+    .image-row {
+        gap: 20px;
+    }
+
+    .left-image, .left-image1, .right-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .button-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .homeButton, .recipeButton, .contactButton {
+        font-size: 18px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .history p {
+        font-size: 14px;
+    }
+
+    .image-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-image, .left-image1, .right-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .dishes-info {
+        gap: 30px;
+    }
+
+    .paella p, .fideua p, .tortilla p {
+        font-size: 14px;
+    }
+}

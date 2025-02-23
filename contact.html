@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+
+    <section> <!-- Section for the navigation bar -->
+        
+        <a href="index.html">  <!-- Links to the home page -->
+            <button class="homeButton">
+            <img src="https://img.icons8.com/?size=100&id=83326&format=png&color=000000" 
+            alt="Home Icon" class="home-icon"> Home</button>
+            </a>
+
+        <a href="Recipe.html">  <!-- Links to the recipe page -->
+            <button class="recipeButton">
+            <img src="https://img.icons8.com/?size=100&id=idEQE7TsG0NA&format=png&color=000000" 
+            alt="Recipe Icon" class="recipe-icon">Recipe</button>
+        </a>
+
+        <a href="contact.html"> <!-- Links to the contact page -->
+            <button class="contactButton">
+                <img src="https://img.icons8.com/?size=100&id=88175&format=png&color=000000" 
+                     alt="Contact-icon" class="contact-icon"> 
+                Contact Us
+            </button>
+        </a>
+
+        <a href="index.html"> <!-- Website title -->
+            <h1>HATIM'S KITCHEN</h1>
+        </a>
+    </section>
+
+    <hr class="separation-line"> 
+
+    <main> <!-- Main content of the page -->
+        <form action="https://formsubmit.co/HATIMQAZI2905@GMAIL.COM" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="contactMethod">Preferred Contact Method:</label> <!-- Dropdown menu for contact method -->
+            <select id="contactMethod" name="contactMethod" required>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <!-- JavaScript to enable the phone input field when the phone option is selected -->
+            <label for="email">Email (Aston University only):</label>
+            <input type="email" id="email" name="email" required pattern="^[0-9]{9}@aston\.ac\.uk$" title="Please enter a valid Aston University email address with a nine-digit number (e.g., 123456789@aston.ac.uk)">
+
+            <!-- JavaScript to enable the phone input field when the phone option is selected -->
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required>
+            
+            <!-- JavaScript to enable the phone input field when the phone option is selected -->
+            <label for="phone">Phone (if selected):</label>
+            <input type="tel" id="phone" name="phone" pattern="^[0-9]{11}$" title="Please enter a valid 10-digit phone number." disabled>
+
+            <!-- JavaScript to enable the phone input field when the phone option is selected -->
+            <label for="lessonType">Type of Lesson:</label>
+            <select id="lessonType" name="lessonType" required>
+                <option value="privateCookingLesson">Private Cooking Lesson</option>
+                <option value="Enquiry">Enquiry</option>
+            </select>
+
+            <!-- JavaScript to enable the appointment date input field when the private cooking lesson option is selected -->
+            <label for="appointmentDate">Preferred Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" min="2025-02-16" required>
+
+            <!-- JavaScript to enable the appointment time input field when the private cooking lesson option is selected -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer> <!-- Footer of the page -->
+        <div class="footer-content">
+            <p>&copy; 2025 Hatim's Kitchen</p>
+            <p>Email: <a href="mailto:240204268@aston.ac.uk" style="color: white;">240204268@aston.ac.uk</a></p>
+            <p>Address: Birmingham, United Kingdom</p>
+            <p>Student Number: 240204268</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script> <!-- Links the external JavaScript file -->
+
+
+</body>
+</html>
